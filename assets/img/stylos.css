@@ -10,7 +10,8 @@ body {
 
 .header-container {
     position: relative;
-}
+       
+    }
 
 .carousel-container {
     position: absolute;
@@ -55,3 +56,4 @@ div
     height: 40px;
 
 }
+
