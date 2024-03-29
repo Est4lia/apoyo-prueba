@@ -139,7 +139,7 @@ header{
   #card {
     width: 70%; /* Oculta los indicadores en pantallas menores o iguales a 992px */
 }
-  .card-container{
+  #desaparecer{
     display: none;
   }
 
