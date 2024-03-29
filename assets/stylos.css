@@ -132,16 +132,44 @@ header{
 
 }
 
+
+
+@media (max-width: 988px) {
+ 
+  #card {
+    width: 70%; /* Oculta los indicadores en pantallas menores o iguales a 992px */
+}
+  #reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    
+  } 
+
+}
+
+
 @media (max-width: 604px) {
     #card {
         width: 90%; /* Oculta los indicadores en pantallas menores o iguales a 992px */
     }
-
+ 
+    #reverse{
+      display: flex;
+      flex-direction: column-reverse;
+    } 
 
 }
+
+
+
 
 footer{
     background-color: #00e4ff;
 }
+
+p{
+  text-justify: auto !important;
+}
+
 
 
