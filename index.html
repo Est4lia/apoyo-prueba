@@ -15,14 +15,15 @@
        <!-- aca agregue mi bootstrap js -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="stylos.css">
+    <link rel="stylesheet" href="assets/stylos.css">
 </head>
 <body>
 
 <header class="header-principal">
-    <div class="header-container ">
     
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="header-container ">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid px-5">
           <a class="navbar-brand" href="#"><img src="/assets/img/viajes.svg" width="40px" alt="">Viajes Chile</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +32,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul  class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link " href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quienes somos</a>
+                <a class="nav-link" href="#¿QUIÉNES SOMOS?">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Destacados</a>
+                <a class="nav-link" href="#textdestacados">Destacados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
              </ul>
           </div>
@@ -48,9 +49,8 @@
       </nav>
 
 
-      <header>
               <!-- Contenido de tu carrusel -->
-              <div id="carouselExampleIndicators" class="carousel slide" >
+               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,7 +67,7 @@
                     <img src="/assets/img/carousel3.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <br> <br> <br>
+            
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -76,67 +76,72 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-   
+              </div> 
+    </div> 
 </header>
-
+<br><br><br>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center pt-5 pb-3">
-            <h3>¿QUIÉNES SOMOS?</h3>
+        <div class="col text-center py-1 pb-3">
+            <h4 id="¿QUIÉNES SOMOS?">¿QUIÉNES SOMOS?</h4>
             <!-- <button class="btn btn-primary">Mi Botón</button> -->
         </div>
     </div>
 </div>
-<br>
+<hr class="centered-hr" width="100%">
 
-<!-- aca estan mis columnas de texto -->
 
-<div class="container" >
-    <div class="row">
-      <div class="col-md-4">
+
+<!-- acá estan mis columnas de texto -->
+<!-- <div class="container">  este container las toma a todas -->
+
+  <div class="container">
+      <div class="row py-5 justify-content-center ">
+      <div class="col-md-3">
         <div class="image-container">
-            <img src="/img/plane-solid.svg" width="8%" alt="">
+            <img src="/img/plane-solid.svg" width="6%" alt="">
         </div>
-        
         <p>Los viajes son una ventana hacia el descubrimiento y la aventura. Cada destino ofrece una nueva perspectiva, una oportunidad para sumergirse en culturas fascinantes y paisajes impresionantes. Desde las calles empedradas de las antiguas ciudades europeas hasta las exuberantes selvas tropicales de América del Sur, el mundo está lleno de maravillas esperando ser exploradas.</p>
      
     </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <p>Explorar nuevos lugares es una experiencia que enriquece el alma y expande los horizontes. Cada viaje es una oportunidad para escapar de la rutina diaria y sumergirse en un mundo de posibilidades infinitas. Ya sea que te encuentres recorriendo los caminos menos transitados o disfrutando de las vistas desde lo alto de un rascacielos, cada momento de viaje es una aventura única e inolvidable.</p>
         <div class="image-container">
-            <img src="/img/plane-solid.svg" width="8%" alt="">
+          <i class="fa-solid fa-mountain"></i>
         </div>
     
     
     </div>
       
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="image-container">
-            <img src="/img/plane-solid.svg" width="8%" alt="">
+          <i class="fa-solid fa-route"></i>
         </div>
         <p>Los viajes no se trata solo de destinos, sino también del viaje en sí. Cada paso del camino está lleno de emoción, desde la planificación del itinerario hasta la anticipación de la próxima aventura. Ya sea que viajes solo, con amigos o en familia, cada viaje ofrece la oportunidad de crear recuerdos duraderos y experiencias que perdurarán toda la vida.</p>
       </div>
-    </div>
+   
   </div>
 
+ <!-- acá comienza destacados -->
 
 
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col text-center pt-5 pb-3">
-            <h3>DESTACADOS</h3>
-            <!-- <button class="btn btn-primary">Mi Botón</button> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center pt-3 pb-3">
+                <h3 id="textdestacados">DESTACADOS</h3>
+               
         </div>
     </div>
-</div>
+    <hr class="centered-hr" width="100%">
+
+
 <!-- Aca estan mis fotos -->
 
-<div class="container">
+<div class="card-container">
           
-    <div class="row">
-        <div class="col-md-3">
+    <div class="row mx-auto justify-content-center">
+        <div class="d-flex col-md-3 justify-content-center" id="card">
             <div class="card mb-3">
                 <img src="/assets/img/card1.jpg" class="card-img-top" alt="Producto 1">
                 <div class="card-body">
@@ -147,9 +152,9 @@
              
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="d-flex col-md-3 justify-content-center" id="card">
             <div class="card mb-3">
-                <img src="/assets/img/card2.jpg" class="card-img-top" alt="Producto 2">
+                <img src="/assets/img/card2.jpg" class="card-img-top"  alt="Producto 2">
                 <div class="card-body">
                  
                     <p class="card-text">Sumérgete en un oasis de relajación con nuestro Masaje Relajante de Cuerpo Completo, de 60 minutos, diseñado para aliviar el estrés, promoviendo bienestar.
@@ -159,8 +164,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card mb-3">
+        <div class="d-flex col-md-3 justify-content-center" id="card">
+            <div class="card mb-3" id="colorcard">
                 <img src="/assets/img/card3.jpg" class="card-img-top" alt="Producto 3">
                 <div class="card-body">
                     
@@ -170,7 +175,7 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="d-flex col-md-3 justify-content-center" id="card">
             <div class="card mb-3">
                 <img src="/assets/img/card3.jpg" class="card-img-top" alt="Producto 3">
                 <div class="card-body">
@@ -185,17 +190,70 @@
     </div>
 </div>
 
-
- 
-
+</div> </div>
 
 
+ <!-- Sección de contacto-->
+    
+ <section id="contacto" class=" bg-light">
+    <div class="container" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center pt-5 pb-3">
+                    <h3 class="mb-4" id="contacto">CONTACTO</h3>
+                    <!-- <button class="btn btn-primary">Mi Botón</button> -->
+                </div>
+            </div>
+        </div>
+        <hr class="centered-hr" width="100%">
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+         
+            <div class="form-group">
+                <label for="sugerencia">Requerimiento</label>
+                <textarea class="form-control" id="sugerencia" rows="4" required></textarea>
+            </div>
+            <br>
+            <button  type="submit" class="btn btn-primary mb-4" style="background-color: #00e4ff;">Enviar</button>
+        </form>
+        
+    </div>
+</section>
 
- <footer style="background-color: aqua;">
+</div>
 
- </footer>
- 
 
+<footer class="footer mt-auto py-3">
+
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="text-center">Viajes Chile</h1>
+      </div>
+      <div class="col-md-6 text-center ">
+        <a href="#" class="mr-3"><i class="fab fa-square-facebook fa-2x" style="color: #ffffff;"></i></a>
+        <a href="#" class="mr-3"><i class="fab fa-square-twitter fa-2x" style="color: #ffffff;"></i></a>
+        <a href="#" class="mr-3"><i class="fab fa-square-instagram fa-2x" style="color: #ffffff;"></i></a>
+        <a href="#"><i class="fab fa-square-pinterest fa-2x" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+
+</footer> 
+
+<script src="https://kit.fontawesome.com/e4c1bcc4db.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="assets/javas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
