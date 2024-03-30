@@ -40,6 +40,9 @@ header{
 
 }
 
+.carousel-indicators .active{
+  background-color: #00e4ff;
+}
 
 /* aca estan mis card */
 
@@ -142,7 +145,10 @@ header{
   #desaparecer{
     display: none;
   }
-
+.container-fluid{
+  padding-left: 10px !important;
+  padding-right: 10px !important
+} 
 }
 
 
@@ -151,8 +157,10 @@ header{
         width: 90%; /* Oculta los indicadores en pantallas menores o iguales a 992px */
     }
  
-  
-
+   .celularwhidth{
+    width: 50px;
+   }
+     
 }
 
 
@@ -168,3 +176,4 @@ footer{
 
 
 }
+ 
